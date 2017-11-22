@@ -1,0 +1,36 @@
+---
+title: "Iris Dataset Presentation"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+This is a presentation for the Coursera Shiny Application and Reproducible Pitch project. The dataset used is the "iris" and the purpose is to give through Shiny the user the ability to plot 2D data and have a linear fit for the plot.
+
+## The Data Summary
+Here we can se the resume of the "iris" dataset:
+```{r cars, echo = TRUE}
+data("iris")
+summary(iris)
+```
+
+## Iris Pair Plot
+
+```{r pressure}
+pairs(iris[1:4], main = "Iris Pair Plot", pch = 21, bg = c("black", "red", "green")[unclass(iris$Species)])
+```
+
+## Slide with R Output
+
+The Shiny website can be found at:
+
+- https://mauricioyc.shinyapps.io/shiny_project/
+
+The Github repository with all the files and codes can be found at:
+
+- https://github.com/mauricioyc/shiny_project
+
